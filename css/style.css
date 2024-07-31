@@ -495,3 +495,38 @@ button {
         }
     }
 }
+
+#get-book-copy {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: var(--color-dark-blue);
+
+    & .article__title_left {
+        color: var(--color-white);
+    }
+
+    & .button-outlined {
+        color: var(--color-white);
+    }
+
+    & .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 130px;
+
+        & .col:nth-child(1) {
+            margin-top: 70px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 27px;
+
+            & p {
+                font-family: "Inter";
+                font-size: 1.8rem;
+                line-height: 2.85rem;
+
+                color: var(--color-light-blue);
+            }
+        }
+    }
+}
