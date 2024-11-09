@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
 .container {
   padding-inline: 0.75rem;
   width: 100%;
@@ -37,7 +44,6 @@
   align-items: center;
 }
 .header__socials a {
-  display: block;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,6 +74,122 @@
   border: none;
   background: none;
   outline: none;
+  padding-inline: 3.25rem;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  text-wrap: nowrap;
+}
+
+.btn-accent {
+  background: #ffca42;
+  color: #1b3764;
+}
+
+.btn-text {
+  color: #ffffff;
+  line-height: 30.4px;
+  letter-spacing: 0.38px;
+}
+.btn-text span::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  padding-right: 10px;
+  height: 1px;
+  background: #ffffff;
+}
+
+.home {
+  background: #1b3764;
+}
+.home .container {
+  display: flex;
+  align-items: center;
+  column-gap: 75px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.home .container:only-child {
+  height: fit-content;
+}
+.home h1 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: nowrap;
+  line-height: 36px;
+  letter-spacing: 1.2px;
+}
+.home h1::before {
+  content: " ";
+  width: 35px;
+  height: 2px;
+  background: #ffca42;
+  display: block;
+}
+.home h2 {
+  font-size: 64px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 78px;
+  letter-spacing: 1.3px;
+  margin-top: 10px;
+}
+.home__description {
+  font-size: 18px;
+  line-height: 28.5px;
+  color: #b4c7e7;
+  margin-top: 24px;
+}
+.home__btn-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 42px;
+}
+.home__stats {
+  display: flex;
+  gap: 60px;
+  margin-top: 47px;
+}
+
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.stats-item_row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.stats-item_row .stats-item__value {
+  padding-left: 0;
+}
+.stats-item__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  line-height: 28.8px;
+  letter-spacing: 0.28px;
+  color: #ffffff;
+}
+.stats-item__title::before {
+  content: " ";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffca42;
+}
+.stats-item__value {
+  padding-left: 26px;
+  font-size: 17px;
+  line-height: 27px;
+  color: #b4c7e7;
 }
 
 /*# sourceMappingURL=style.css.map */
